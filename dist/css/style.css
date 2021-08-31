@@ -1,0 +1,773 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-sb {
+	justify-content: space-between;
+}
+
+.row {
+	display: flex;
+	margin: -10px;
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+html {
+	font-family: 'Spartan', sans-serif;
+}
+
+.list-icon {
+	color: #ea1d5d;
+}
+
+.list-icon .item-icon {
+	display: flex;
+	width: 40px;
+	height: 35px;
+	margin-left: 20px;
+	border: 1px double #ea1d5d;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-icon .item-icon:hover {
+	transition: all .4s;
+	color: white;
+	border: 1px double white;
+}
+
+.home {
+	height: 100vh;
+	background: url(https://demo.w3layouts.com/demos_new/template_demo/01-10-2018/toys_shop-demo_Free/695002674/web/images/b1.jpg);
+}
+
+.home .top {
+	height: 40px;
+	background: rgba(255, 255, 255, .7);
+}
+
+.home .top .items {
+	display: flex;
+	height: 100%;
+	margin-left: 85px;
+	align-items: center;
+}
+
+.home .top .items .it {
+	display: flex;
+	margin-left: 30px;
+	align-items: center;
+}
+
+.home .top .items .it i {
+	font-size: 16px;
+	margin-right: 15px;
+	color: #ea1d5d;
+}
+
+.home .top .items .it p {
+	font-size: 15px;
+}
+
+.home .wrap {
+	width: 100%;
+	background: black;
+}
+
+.home .wrap .contain {
+	height: 80px;
+	margin: 0 100px;
+}
+
+.home .wrap .contain .content a {
+	font-size: 35px;
+	font-weight: 25px;
+	color: white;
+}
+
+.home .wrap .contain .content .search-box {
+	width: 600px;
+	margin-right: 60px;
+	margin-left: 150px;
+	align-items: center;
+	justify-content: center;
+}
+
+.home .wrap .contain .content .search-box input {
+	width: 85%;
+	height: 35px;
+	padding: 10px;
+	color: #fff;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background-color: #e4e4e4;
+}
+
+.home .wrap .contain .content .search-box .box {
+	display: flex;
+	width: 13%;
+	height: 35px;
+	cursor: pointer;
+	color: #fff;
+	border: 1px solid #fff;
+	background: #000;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .wrap .contain .content .search-box .box:hover {
+	color: black;
+	border: none;
+	background: #e4e4e4;
+}
+
+.home .wrap .contain .content .search-box .box span {
+	padding: 10px;
+}
+
+.home .menu {
+	display: flex;
+	height: 100%;
+	height: 80px;
+	background: rgba(255, 255, 255, .7);
+	justify-content: center;
+	align-items: center;
+}
+
+.home .menu .container nav ul {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.home .menu .container nav ul li {
+	margin-right: 60px;
+}
+
+.home .menu .container nav ul li:first-child a {
+	color: #ea1d5d;
+}
+
+.home .menu .container nav ul li a {
+	font-weight: 40px;
+	position: relative;
+	color: black;
+}
+
+.home .menu .container nav ul li a::after {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 0;
+	height: 3px;
+	content: '';
+	opacity: 0;
+	background: white;
+}
+
+.home .menu .container nav ul li a:hover {
+	transition: all .3s;
+	color: #ea1d5d;
+}
+
+.home .menu .container nav ul li a:hover::after {
+	width: 100%;
+	transition: all .4s;
+	opacity: 1;
+}
+
+.home .center-title {
+	margin-top: 100px;
+}
+
+.home .center-title .container {
+	position: relative;
+	text-align: center;
+}
+
+.home .center-title .container h1 {
+	font-size: 60px;
+	font-weight: 600;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.home .center-title .container p {
+	font-size: 15px;
+	line-height: 30px;
+	color: white;
+}
+
+.home .center-title .container button {
+	font-size: 15px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	width: 150px;
+	height: 50px;
+	margin-top: 35px;
+	cursor: pointer;
+	transform: translate(-50%, 50%);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	background: #ea1d5d;
+}
+
+.home .center-title .container button:hover {
+	transition: .4s all;
+	border: 2px solid #ea1d5d;
+	background: none;
+}
+
+.best-product {
+	margin: 70px;
+}
+
+.best-product h2 {
+	font-size: 30px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.best-product .container .row .col-md-3 {
+	margin-right: 90px;
+}
+
+.best-product .container .row .col-md-3 img {
+	border: 1px solid rgba(51, 51, 51, .356);
+	border-radius: 1%;
+}
+
+.best-product .container .row .col-md-3 p {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 15px;
+	text-align: center;
+}
+
+.new-avviral {
+	font-size: 25px;
+	display: flex;
+	height: 270px;
+	color: white;
+	background: #26bb48;
+	justify-content: center;
+	align-items: center;
+}
+
+.customReview {
+	height: 100vh;
+	background: url(https://demo.w3layouts.com/demos_new/template_demo/01-10-2018/toys_shop-demo_Free/695002674/web/images/b1.jpg);
+}
+
+.customReview h2 {
+	font-size: 50px;
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+}
+
+.customReview .customers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.customReview .customers .wrapp-per {
+	margin-right: 30px;
+	background: rgba(255, 255, 255, .721569);
+}
+
+.customReview .customers .wrapp-per .per {
+	padding: 30px;
+}
+
+.customReview .customers .wrapp-per .per .info {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.customReview .customers .wrapp-per .per .info img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.customReview .customers .wrapp-per .per .info .text-info {
+	padding: 20px 30px;
+}
+
+.customReview .customers .wrapp-per .per .info .text-info .name {
+	margin-bottom: 10px;
+}
+
+.customReview .customers .wrapp-per .per .info .text-info .job {
+	font-size: 12px;
+	color: #26bb48;
+}
+
+.customReview .customers .wrapp-per .per .review {
+	margin-top: 15px;
+}
+
+.customReview .customers .wrapp-per .per .review p {
+	font-size: 13px;
+	color: rgba(0, 0, 0, .815);
+}
+
+.customReview .customers .wrapp-per .per .review p i {
+	font-size: 20px;
+	margin: 0 9px;
+	color: #ea1d5d;
+}
+
+.lastest h2 {
+	font-size: 50px;
+	padding: 50px 0;
+	text-align: center;
+	color: black;
+}
+
+.lastest .container .first {
+	width: 100%;
+}
+
+.lastest .container .first img {
+	width: 100%;
+	height: 450px;
+}
+
+.lastest .container .wrapp-pro {
+	display: flex;
+	justify-content: space-between;
+}
+
+.lastest .container .wrapp-pro .second {
+	margin-right: 20px;
+}
+
+.lastest .container .wrapp-pro .second img {
+	width: 95%;
+	height: 100vh;
+}
+
+.lastest .container .wrapp-pro .second p {
+	width: 90%;
+}
+
+.lastest .container .wrapp-pro .third {
+	width: 50%;
+}
+
+.lastest .container .wrapp-pro .third .item-toy {
+	width: 100%;
+}
+
+.lastest .container .item-toy .description {
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 20px 0;
+}
+
+.lastest .container .item-toy .btnShopnow {
+	width: 150px;
+	height: 45px;
+	margin-bottom: 15px;
+	padding: 13px 33px;
+	color: white;
+	border: 1px solid black;
+	background: black;
+}
+
+.lastest .container .item-toy .btnShopnow:hover {
+	transition: .4 ease-in all;
+	color: black;
+	background: white;
+}
+
+.touch {
+	height: 500px;
+	background: #26bb48;
+}
+
+.touch .container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.touch .container h2 {
+	font-size: 50px;
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+}
+
+.touch .container .list-icon {
+	justify-content: center;
+}
+
+.touch .container p {
+	margin: 25px 0;
+	text-align: center;
+}
+
+.touch .container .mid {
+	position: absolute;
+	bottom: -50%;
+	left: 50%;
+	flex-direction: column;
+	width: 55%;
+	transform: translateX(-50%);
+	justify-content: center;
+}
+
+.touch .container .mid input {
+	display: block;
+	width: 100%;
+	padding: 13px;
+	border: 1px solid black;
+	background: white;
+}
+
+.touch .container .mid .btnSub {
+	display: inline-block;
+	display: flex;
+	width: 150px;
+	height: 45px;
+	margin-top: 25px;
+	padding: 15px 35px;
+	color: white;
+	border: 1px solid black;
+	background: black;
+	align-self: center;
+}
+
+.touch .container .mid .btnSub:hover {
+	transition: .4 ease-in all;
+	color: black;
+	background: white;
+}
+
+.footer {
+	font-size: 13px;
+	display: flex;
+	height: 60px;
+	color: white;
+	background: black;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 576px) {
+
+.row .col-sm-1 {
+	width: 8.33333%;
+	padding: 10px;
+}
+
+.row .col-sm-2 {
+	width: 16.66667%;
+	padding: 10px;
+}
+
+.row .col-sm-3 {
+	width: 25%;
+	padding: 10px;
+}
+
+.row .col-sm-4 {
+	width: 33.33333%;
+	padding: 10px;
+}
+
+.row .col-sm-5 {
+	width: 41.66667%;
+	padding: 10px;
+}
+
+.row .col-sm-6 {
+	width: 50%;
+	padding: 10px;
+}
+
+.row .col-sm-7 {
+	width: 58.33333%;
+	padding: 10px;
+}
+
+.row .col-sm-8 {
+	width: 66.66667%;
+	padding: 10px;
+}
+
+.row .col-sm-9 {
+	width: 75%;
+	padding: 10px;
+}
+
+.row .col-sm-10 {
+	width: 83.33333%;
+	padding: 10px;
+}
+
+.row .col-sm-11 {
+	width: 91.66667%;
+	padding: 10px;
+}
+
+}
+
+@media (min-width: 768px) {
+
+.row .col-md-1 {
+	width: 8.33333%;
+	padding: 10px;
+}
+
+.row .col-md-2 {
+	width: 16.66667%;
+	padding: 10px;
+}
+
+.row .col-md-3 {
+	width: 25%;
+	padding: 10px;
+}
+
+.row .col-md-4 {
+	width: 33.33333%;
+	padding: 10px;
+}
+
+.row .col-md-5 {
+	width: 41.66667%;
+	padding: 10px;
+}
+
+.row .col-md-6 {
+	width: 50%;
+	padding: 10px;
+}
+
+.row .col-md-7 {
+	width: 58.33333%;
+	padding: 10px;
+}
+
+.row .col-md-8 {
+	width: 66.66667%;
+	padding: 10px;
+}
+
+.row .col-md-9 {
+	width: 75%;
+	padding: 10px;
+}
+
+.row .col-md-10 {
+	width: 83.33333%;
+	padding: 10px;
+}
+
+.row .col-md-11 {
+	width: 91.66667%;
+	padding: 10px;
+}
+
+}
+
+@media (min-width: 992px) {
+
+.row .col-lg-1 {
+	width: 8.33333%;
+	padding: 10px;
+}
+
+.row .col-lg-2 {
+	width: 16.66667%;
+	padding: 10px;
+}
+
+.row .col-lg-3 {
+	width: 25%;
+	padding: 10px;
+}
+
+.row .col-lg-4 {
+	width: 33.33333%;
+	padding: 10px;
+}
+
+.row .col-lg-5 {
+	width: 41.66667%;
+	padding: 10px;
+}
+
+.row .col-lg-6 {
+	width: 50%;
+	padding: 10px;
+}
+
+.row .col-lg-7 {
+	width: 58.33333%;
+	padding: 10px;
+}
+
+.row .col-lg-8 {
+	width: 66.66667%;
+	padding: 10px;
+}
+
+.row .col-lg-9 {
+	width: 75%;
+	padding: 10px;
+}
+
+.row .col-lg-10 {
+	width: 83.33333%;
+	padding: 10px;
+}
+
+.row .col-lg-11 {
+	width: 91.66667%;
+	padding: 10px;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.row .col-xl-1 {
+	width: 8.33333%;
+	padding: 10px;
+}
+
+.row .col-xl-2 {
+	width: 16.66667%;
+	padding: 10px;
+}
+
+.row .col-xl-3 {
+	width: 25%;
+	padding: 10px;
+}
+
+.row .col-xl-4 {
+	width: 33.33333%;
+	padding: 10px;
+}
+
+.row .col-xl-5 {
+	width: 41.66667%;
+	padding: 10px;
+}
+
+.row .col-xl-6 {
+	width: 50%;
+	padding: 10px;
+}
+
+.row .col-xl-7 {
+	width: 58.33333%;
+	padding: 10px;
+}
+
+.row .col-xl-8 {
+	width: 66.66667%;
+	padding: 10px;
+}
+
+.row .col-xl-9 {
+	width: 75%;
+	padding: 10px;
+}
+
+.row .col-xl-10 {
+	width: 83.33333%;
+	padding: 10px;
+}
+
+.row .col-xl-11 {
+	width: 91.66667%;
+	padding: 10px;
+}
+
+}
+
+@media (max-width: 576px) {
+
+.row .col-xs-1 {
+	width: 8.33333%;
+	padding: 10px;
+}
+
+.row .col-xs-2 {
+	width: 16.66667%;
+	padding: 10px;
+}
+
+.row .col-xs-3 {
+	width: 25%;
+	padding: 10px;
+}
+
+.row .col-xs-4 {
+	width: 33.33333%;
+	padding: 10px;
+}
+
+.row .col-xs-5 {
+	width: 41.66667%;
+	padding: 10px;
+}
+
+.row .col-xs-6 {
+	width: 50%;
+	padding: 10px;
+}
+
+.row .col-xs-7 {
+	width: 58.33333%;
+	padding: 10px;
+}
+
+.row .col-xs-8 {
+	width: 66.66667%;
+	padding: 10px;
+}
+
+.row .col-xs-9 {
+	width: 75%;
+	padding: 10px;
+}
+
+.row .col-xs-10 {
+	width: 83.33333%;
+	padding: 10px;
+}
+
+.row .col-xs-11 {
+	width: 91.66667%;
+	padding: 10px;
+}
+
+}
+
